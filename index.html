@@ -5,39 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="wrapper">
-    <div class="headerLeft">
-    </div>
 
-    <div class="headerRight">
-        <p>Skup drugih elemenata na stranici</p>
+    <div class="header">
+        <div class="headerLeft">
+        </div>
+
+        <div class="headerRight">
+            <p>Skup drugih elemenata na stranici</p>
+        </div>
     </div>
 
     <div class="slider">
         <div class="row1">
-            <img src="Assets/slider-image-7.jpg" alt="image7" id="img7">
-            <img src="Assets/slider-image-6.jpg" alt="image6" id="img6">
-            <img src="Assets/slider-image-9.jpg" alt="image9" id="img9">
-            <img src="Assets/slider-image-8.jpg" alt="image8" id="img8">
-            <img src="Assets/slider-image-5.jpg" alt="image5" id="img5">
+            <img src="Assets/slider-image-7.jpg" alt="image">
+            <img src="Assets/slider-image-6.jpg" alt="image">
+            <img src="Assets/slider-image-9.jpg" alt="image">
+            <img src="Assets/slider-image-8.jpg" alt="image">
+            <img src="Assets/slider-image-5.jpg" alt="image">
         </div>
 
         <div class="row2">
-            <img src="Assets/slider-image-4.jpg" alt="image4" id="img4">
-            <img src="Assets/slider-image-1.jpg" alt="image1" id="img1">
-            <img src="Assets/slider-image-2.jpg" alt="image2" id="img2">
-            <img src="Assets/slider-image-3.jpg" alt="image3" id="img3">            
+            <img src="Assets/slider-image-4.jpg" alt="image">
+            <img src="Assets/slider-image-1.jpg" alt="image">
+            <img src="Assets/slider-image-2.jpg" alt="image">
+            <img src="Assets/slider-image-3.jpg" alt="image">            
         </div>
 
         <div class="arrows">
-            <img src="Assets/arrow-gray-left.png" alt="LeftArrow" class="arrowLeft">
-            <img src="Assets/arrow-gray-right.png" alt="RightArrow" class="arrowRight">
+            <button class="arrowLeft">
+                <i class="fa fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button class="arrowRight">
+                <i class="fa fa-solid fa-chevron-right"></i>
+            </button>
         </div>
         
         <div class="text">
@@ -51,7 +60,7 @@
     </div>
 </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
