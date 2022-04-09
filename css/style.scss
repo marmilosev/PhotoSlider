@@ -1,9 +1,8 @@
-$defaultColor : #DDDDDD;
-$titleColor : #134880;
-$font: 'Source Sans Pro', sans-serif;
-$defaultHeight: 100px;
-$defaultWidth: 941px;
-$fontHelvetica : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@use 'colors';
+@use 'fonts';
+@use 'heightWidth';
+@use 'sliderPhotos';
+
 
 /* grid - slider */
 .row1{grid-area: a;}
@@ -69,10 +68,7 @@ h1{
 }
 
 img{
-    height: 200px;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    @include sliderPhotos;
 }
 
 .arrowLeft, .arrowRight {
