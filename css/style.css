@@ -88,10 +88,11 @@ button{
   box-sizing: border-box;
 }
 
-/*Left arrow change*//*
+/*Left arrow change*/
 .up:hover {
   color: #134880;
-  border-color: #134880; }
+  border-color: #134880; 
+  cursor: pointer;}
 .up .arrowLeftBlue {
   display: none;
 }
@@ -125,12 +126,13 @@ border-color: #134880; }
   margin: 20px;
   padding: 5px;
   clear: both;
-}*/
+}
 
-/*Right Arrow change*//*
+/*Right Arrow change*/
 .down:hover {
   color: #134880;
-  border-color: #134880; }
+  border-color: #134880; 
+  cursor: pointer;}
 .down .arrowRightBlue {
   display: none;
 }
@@ -164,7 +166,7 @@ border-color: #134880; }
   margin: 20px;
   padding: 5px;
   clear: both;
-}*/
+}
 
 .wrapper{
   margin: auto;
@@ -235,3 +237,37 @@ p {
   margin: 40px; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+@keyframes blink {
+  0% {
+      opacity:0;
+  }
+  50% {
+      opacity:0.5;
+  }
+  100% {
+      opacity:1;
+  }
+} 
+.flash {
+  animation: blink normal 1s ease-in-out;
+}
+
+
+
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 10%;
+  }
+  100% {
+    left: 0;    
+  }
+}
+.slide {
+  -webkit-animation: linear;
+  -webkit-animation-duration: 1s;
+}
