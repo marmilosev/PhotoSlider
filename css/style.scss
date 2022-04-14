@@ -3,7 +3,6 @@
 @use 'heightWidth';
 @use 'sliderPhotos';
 
-
 /* grid - slider */
 .row1{grid-area: a;}
 .row2{grid-area: b;}
@@ -59,10 +58,9 @@ h1{
     letter-spacing: -0.2px;
 }
 
-*{
+body{
     color: #484A4C;
     font-family: $font;
-    margin-right: 50px;
     font-size: 18px;
     line-height: 26px;
 }
@@ -70,46 +68,116 @@ h1{
 img{
     @include sliderPhotos;
 }
-
-.arrowLeft, .arrowRight {
-    border: 1px solid $defaultColor;
-    background-color: transparent;
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-    height: 60px;
-    width: 60px;
-    border-color: $titleColor;
-}
-i{
+.arrows{
+    text-align: right;
+  }
+  .arrowLeft, .arrowRight {
     width: 9.98px;
-    height: 16px;  
-    margin-left: 10px;
-    margin-top: 12px;
-    padding: 10px;
-    padding-left: 6px;
-    padding-top: 6px;
-    color: $titleColor;
+    height: 16px;
+    left: 35px;
+    top: 22px;
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    clear: both;
+  }
+  button{
+    margin: 6px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+  }
 
-}
-button{
+/*Left arrow change*/
+.up:hover {
+    color: $titleColor;
+    border-color: $titleColor; 
+    cursor: pointer;}
+  .up .arrowLeftBlue {
+    display: none;
+  }
+  .up:hover .arrowLeftBlue {
+    display: inline;
+    width: 9.98px;
+    height: 16px;
+    left: 35px;
+    top: 22px;
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    clear: both;
+  }
+  .up:hover .arrowLeft {
+    display: none;
+  }
+  .up:hover {
+  color: $titleColor;
+  border-color: $titleColor; }
+  .up .arrowLeftBlue {
+    display: none;
+  }
+  .up:hover .arrowLeftBlue {
+    display: inline;
+    width: 9.98px;
+    height: 16px;
+    left: 35px;
+    top: 22px;
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    clear: both;
+  }
+  
+  /*Right Arrow change*/
+  .down:hover {
+    color: $titleColor;
+    border-color: $titleColor; 
+    cursor: pointer;}
+  .down .arrowRightBlue {
+    display: none;
+  }
+  .down:hover .arrowRightBlue {
+    display: inline;
+    width: 9.98px;
+    height: 16px;
+    left: 35px;
+    top: 22px;
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    clear: both;
+  }
+  .down:hover .arrowRight {
+    display: none;
+  }
+  .down:hover {
+  color: $titleColor;
+  border-color: $titleColor; }
+  .down .arrowRightBlue {
+    display: none;
+  }
+  .down:hover .arrowRightBlue {
+    display: inline;
+    width: 9.98px;
+    height: 16px;
+    left: 35px;
+    top: 22px;
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    clear: both;
+  }
+
+.wrapper{
     margin: auto;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    color: $titleColor;
-}
-
-button:hover, i:hover{
-    color: $defaultColor;
-    border-color: $defaultColor;
-}
+  }
 
 .headerLeft{
     background-color: $defaultColor;
     width: 301px;
     border-color: $defaultColor;
     border-radius: 0 0 5px 5px;
-    left: 0px;
 }
 
 .headerRight{
@@ -123,13 +191,12 @@ button:hover, i:hover{
 .header{
     width: $defaultWidth;
     height: $defaultHeight;
-    float: right;
+    margin: auto;
 }
 
 .slider{
     padding: 50px;
     width: 941px;
-    margin-left: calc(100% - 1450px);
 }
 
 p{
@@ -144,7 +211,7 @@ p{
     padding: 10px;
     width: $defaultWidth;
     height: $defaultHeight;
-    float: right;
+    margin: auto;
 }
 
 .footer{
@@ -178,3 +245,18 @@ p{
         margin: 40px;
     }
 }
+
+@keyframes blink {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+  } 
+  .flash {
+    animation: blink normal 1s ease-in-out;
+  }
